@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link
+			href="https://cdn.muicss.com/mui-latest/css/mui.min.css"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<script src="https://cdn.muicss.com/mui-latest/js/mui.min.js"></script>
+		<title>Подкаст вопросы</title>
+	</head>
+	<body>
+		<button
+			class="mui-btn mui-btn--fab mui-btn--danger floating-btn"
+			id="modal-btn"
+			>Все</button
+		>
+		<div id="sidebar">
+			<div class="mui--text-white mui--text-display1 mui--align-vertical"
+				>Подкаст вопросы <br />
+				<small class="author">by Tabek</small></div
+			>
+		</div>
+		<div id="content" class="mui-container-fluid">
+			<div class="mui-row">
+				<div class="mui-col-sm-10 mui-col-sm-offset-1">
+					<br />
+					<br />
+					<div class="mui--text-black-54 mui--text-body2">Задай вопрос</div>
+					<div class="mui-divider"></div>
+
+					<br />
+					<br />
+					<br />
+
+					<div class="mui--text-black-54 mui--text-body2">Ваши вопросы</div>
+					<div class="mui-divider"></div>
+					<br />
+
+					<form id="form" class="mui-form">
+						<div class="mui-textfield mui-textfield--float-label">
+							<input
+								id="input-question"
+								maxlength="256"
+								minlength="15"
+								required
+								type="text"
+							/>
+							<label for="input-question">Что хочешь спросить?</label>
+						</div>
+						<button
+							disabled
+							id="submit"
+							type="submit"
+							class="mui-btn mui-btn--raised mui-btn--primary"
+						>
+							Задать вопрос
+						</button>
+					</form>
+
+					<div id="list"></div>
+				</div>
+			</div>
+		</div>
+		<script
+			defer
+			src="https://static.cloudflareinsights.com/beacon.min.js/v55bfa2fee65d44688e90c00735ed189a1713218998793"
+			integrity="sha512-FIKRFRxgD20moAo96hkZQy/5QojZDAbyx0mQ17jEGHCJc/vi0G2HXLtofwD7Q3NmivvP9at5EVgbRqOaOQb+Rg=="
+			data-cf-beacon='{"rayId":"87978ecb39fca005","version":"2024.4.0","token":"c8bda678e8c641c3bc7781653b8a1835"}'
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
